@@ -16,6 +16,25 @@ def add_list_item
   hash = { "name" => item_name, "quantity" => quantity}
 end
 
+def print_separator(char="-")
+  puts char * 80
+end
+
+def print_list(list)
+  puts "List: #{list['name']}\n"
+
+  list["items"].each do |item|
+    puts "\tItem: #{item['name']}\t\t\t" + 
+        "Quantity: #{item['quantity'].to_s}"
+    end
+  print_separator()
+end
+
 list = create_list()
 puts list.inspect
 list['items'].push(add_list_item())
+list['items'].push(add_list_item())
+list['items'].push(add_list_item())
+
+puts "Here's your list:\n\n"
+print_list(list)
