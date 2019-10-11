@@ -1,3 +1,5 @@
+# Hash and Arrays
+
 def create_list
   print "What is the list name? "
   name = gets.chomp
