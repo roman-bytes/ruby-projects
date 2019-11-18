@@ -13,7 +13,7 @@ ruby ruby-widget-store/widgets.rb
 ```
 
 ## Shopping List
-This project creates a simple list and display's it after adding all of your items. Still more features that can be added here but it was focusing on loops.
+This project creates a simple list and display's it after adding all of your items. Still more features that can be added here but the focus was working with hash's
 
 #### Usage
 ```
